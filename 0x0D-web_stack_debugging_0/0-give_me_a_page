@@ -2,6 +2,7 @@
 # start apache2 inside docker
 
 service apache2 start
+docker run -p 8080:80 -d -it Hello Holberton
 echo "Hello Holberton" >> /var/www/html/index.html
-docker run -p 8080:80 -d -it holbertonschool/265-0
+
 
