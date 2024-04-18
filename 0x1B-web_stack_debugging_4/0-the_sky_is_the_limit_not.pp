@@ -2,7 +2,7 @@
 
 # Increase the ULIMIT of the default file
 exec { 'fix--for-nginx':
-  command => 'sed -i "s/10/4096/" /etc/default/nginx',
+  command => 'sed -i "s/10/2000/" /etc/default/nginx',
   path    => '/usr/local/bin/:/bin/'
 } ->
 
