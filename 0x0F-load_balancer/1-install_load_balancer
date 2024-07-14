@@ -34,11 +34,11 @@ defaults
   timeout server 15s
   timeout http-request 10s
 
-frontend clickviral-tech-frontend
+frontend coffeeads-tech-frontend
     bind *:80
-    default_backend clickviral-tech-backend
+    default_backend coffeeads-tech-backend
 
-backend clickviral-tech-backend
+backend coffeeads-tech-backend
     balance roundrobin
     server 421732-web-01 100.25.111.115:80 check
     server 421732-web-02 3.90.80.81:80 check
