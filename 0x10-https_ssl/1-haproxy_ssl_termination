@@ -41,7 +41,7 @@ frontend coffeeads-frontend
         default_backend coffeeads-backend
 
 frontend coffeeads-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/coffeeads.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.coffeeads.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend coffeeads-backend
 
