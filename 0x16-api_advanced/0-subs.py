@@ -20,7 +20,7 @@ def number_of_subscribers(subreddit):
         subs = data.get("data", {}).get("subscribers", 0)
         return subs
     except requests.RequestException as e:
-        print(f"Request failed: {404}")
+        print(f'Request failed: {e}')
         return 0
     except ValueError:
         print("Failed to parse JSON response")
